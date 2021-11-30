@@ -19,7 +19,6 @@ resource google_compute_instance "server" {
   metadata = {
     block-project-ssh-keys = false
     enable-oslogin         = false
-    serial-port-enable     = true
   }
   labels = {
     git_commit           = "37914a45800114d263c0dcd74b81b9dd01307e13"
