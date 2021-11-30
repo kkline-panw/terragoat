@@ -13,9 +13,9 @@ resource "aws_security_group" "ssh_traffic" {
     cidr_blocks = ["0.0.0.0/0"]
   }
   tags = {
-    git_commit           = "f70f65ea53591b789194d5d6994cadec66810afd"
-    git_file             = "simple_instance/ec2.tf"
-    git_last_modified_at = "2021-11-28 20:14:17"
+    git_commit           = "b9493bb5a58fbec5751be22568301c5d5c4d8e5c"
+    git_file             = "simple_instance/ec2_vuln_demo.tf"
+    git_last_modified_at = "2021-11-30 17:13:57"
     git_last_modified_by = "94995421+kkline-panw@users.noreply.github.com"
     git_modifiers        = "94995421+kkline-panw"
     git_org              = "kkline-panw"
@@ -30,9 +30,9 @@ resource "aws_instance" "web_server_instance" {
   security_groups = ["${aws_security_group.ssh_traffic.name}"]
   tags = {
     Name                 = "bc_workshop_ec2"
-    git_commit           = "f70f65ea53591b789194d5d6994cadec66810afd"
-    git_file             = "simple_instance/ec2.tf"
-    git_last_modified_at = "2021-11-28 20:14:17"
+    git_commit           = "b9493bb5a58fbec5751be22568301c5d5c4d8e5c"
+    git_file             = "simple_instance/ec2_vuln_demo.tf"
+    git_last_modified_at = "2021-11-30 17:13:57"
     git_last_modified_by = "94995421+kkline-panw@users.noreply.github.com"
     git_modifiers        = "94995421+kkline-panw"
     git_org              = "kkline-panw"
