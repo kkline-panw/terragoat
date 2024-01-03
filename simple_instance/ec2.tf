@@ -21,6 +21,7 @@ resource "aws_security_group" "ssh_traffic" {
     git_org              = "kkline-panw"
     git_repo             = "terragoat"
     yor_trace            = "346a2213-8936-4a49-84f9-ef9f7ccfe3b8"
+    yor_name             = "ssh_traffic"
   }
 }
 
@@ -38,6 +39,7 @@ resource "aws_instance" "web_server_instance" {
     git_org              = "kkline-panw"
     git_repo             = "terragoat"
     yor_trace            = "7f07cd0a-ec68-41ed-8dc6-e417dfc0a83c"
+    yor_name             = "web_server_instance"
   }
 }
 
